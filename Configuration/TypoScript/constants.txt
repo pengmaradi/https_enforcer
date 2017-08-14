@@ -1,0 +1,22 @@
+plugin.tx_httpsenforcer {
+	# cat=plugin.tx_httpsenforcer//; type=string; label=Unsecure TYPO3 Root: Unsecure TYPO3 root, no http:// prefix, no trailing slash. Example: www.mydomain.com/cms
+	unsecure_typo3_root = www.example.org
+
+	# cat=plugin.tx_httpsenforcer//; type=string; label=Secure TYPO3 Root: Secure TYPO3 root, no https:// prefix, no trailing slash. Example: secure.myprovider.com/~mydomain/cms
+	secure_typo3_root = www.example.org
+
+	# cat=plugin.tx_httpsenforcer//; type=boolean; label=Require SSL for these pages: If set, this page plus all subpages will require SSL
+	require_ssl = 0
+
+	# cat=plugin.tx_httpsenforcer//; type=boolean; label=Disable HTTPS Enforcer for Back-End Users: If set, users with valid TYPO3 back end user session can view the site without protocol enforcement
+	disable_httpsenforcer_for_be_user = 0
+
+	# cat=plugin.tx_httpsenforcer//; type=string; label=SSL-Proxy: If secure requests to your site have to go through a proxy, the name of that proxy without https:// or trailing slash
+	ssl_proxy = 
+
+	# cat=plugin.tx_httpsenforcer//; type=boolean; label=Always allow secure connections: If set to 1, requests for pages over a secure connection will not be redirected to a non-secure URL
+	always_allow_SSL = 0
+
+	# cat=plugin.tx_httpsenforcer//; type=integer; label=SSL port: The port on which your machine receives secure connections (default: 443)
+	sslPort = 443
+}

@@ -1,0 +1,9 @@
+plugin.tx_httpsenforcer {
+	unsecure_typo3_root = {$plugin.tx_httpsenforcer.unsecure_typo3_root}
+	secure_typo3_root = {$plugin.tx_httpsenforcer.secure_typo3_root}
+	require_ssl = {$plugin.tx_httpsenforcer.require_ssl}
+	disable_httpsenforcer_for_be_user = {$plugin.tx_httpsenforcer.disable_httpsenforcer_for_be_user}
+	ssl_proxy = {$plugin.tx_httpsenforcer.ssl_proxy}
+	always_allow_SSL = {$plugin.tx_httpsenforcer.always_allow_SSL}
+	sslPort = {$plugin.tx_httpsenforcer.sslPort}
+}
