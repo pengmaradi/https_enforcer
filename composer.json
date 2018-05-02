@@ -1,0 +1,12 @@
+{
+    "name": "pengmaradi/https-enforcer",
+    "description": "Adds a page record option to enforce HTTP/HTTPS access based on server port and environment vars. Can handle shared secure domains and SSL-proxys. Compatible with the RealURL extension.",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms": ">=7"
+    },
+    "replace": {
+        "TVogt/HttpsEnforcer": "self.version"
+    }
+}
